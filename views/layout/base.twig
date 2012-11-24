@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="web/favicon.ico">
+    {% block title %}
+        <title>Z Framework Silex Implementation</title>
+    {% endblock %}
+
+    {% block css %}{% endblock %}
+
+    {% block header_js %}{% endblock %}
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="page_{{ pageName }}">
+    {% block header %}{% endblock %}
+    {% block content %}{% endblock %}
+    {% block footer %}{% endblock %}
+</body>
+</html>

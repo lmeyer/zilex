@@ -1,0 +1,9 @@
+<h2>All pages</h2>
+<ul>
+    {% for template in templates %}
+        <li><a href="{{ template }}">{{ template }}</a></li>
+    {% else %}
+        <li><em>No template found</em></li>
+    {% endfor %}
+</ul>
+<hr />

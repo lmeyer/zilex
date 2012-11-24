@@ -1,0 +1,88 @@
+{% extends "layout/base.twig" %}
+
+{% block css %}
+    <link href="web/css/bootstrap.min.css" rel="stylesheet">
+    <link href="web/css/style.css" rel="stylesheet">
+{% endblock %}
+
+{% block header %}
+    <div class="hero-unit">
+        <div class="container">
+            <h1>Zilex</h1>
+            <h3>Z Framework Silex implementation</h3>
+            <p>Z is an HTML Framework that offers convention, methods and facilities for
+                fastest HTML integration.</p>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Presentation</h1>
+        <p>
+            Zilex is a <a href="http://www.yterium.net/108">Z Framework</a> Silex implementation. It deploy the power of Silex with the simplicity of Z Framework. Now templates use <a href="http://twig.sensiolabs.org/">Twig</a>, so blocks/layouts management are easier than ever.
+        </p>
+
+        <h1>Installation</h1>
+        <p>
+            If you see this page, that's you already managed to install this little HTML Framework.
+        </p>
+        <ol>
+            <li>
+                Be sure to run your PHP server (WAMP, LAMP, XAMPP).
+            </li>
+            <li>
+                Change the <code>RewriteBase</code> in <code>.htaccess</code> depending of your installation folder.
+            </li>
+        </ol>
+
+        <h1>Configuration</h1>
+        <ol>
+            <li>
+                First, if you want to <trong>activate the DEBUG environment</strong>, go to <code>index.php</code> and change the environment around the line 8 to :
+			<pre>
+$app['debug'] = true;</pre>
+            </li>
+            <li>
+                <strong>Change the default page</strong> in <code>index.php</code>.
+			<pre>
+$app['zilex.index'] = 'defaultpagehere',</pre>
+            </li>
+            <li>
+                <strong>Modify the base layout</strong> in <code>views/layout/base.twig</code>. You can create all the blocks you want.
+            </li>
+            <li>
+                Now you can play with your blocks and files in <code>views/</code>.
+            </li>
+        </ol>
+        <h1>Usage</h1>
+        <ol>
+            <li>
+                A page exists if and only if a .twig with the same name exists in <code>views/content/</code>.
+            </li>
+            <li>
+                Access page named 'mypage' with <code>http://localhost/mypage</code>.
+            </li>
+            <li>
+                Extend the layout you want by changing the first line of the content twig file.
+                <pre>
+extends "layout/morelayout.twig"</pre>
+            </li>
+        </ol>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <div style="margin: 20px 0">
+        <div class="container">
+            <hr />
+            <p>
+                Ziled is developed by <a href="http://www.ludovicmeyer.com">Ludovic Meyer</a> from <a href="http://www.pixel-cookers.com">Pixel Cookers</a>. If you want to <a href="http://www.pixel-cookers.com/contact">contact us</a> feel free to use the contact form on our website.
+            </p>
+            <p>
+                This theme is hosted by GitHub :<br />
+                <a href="https://github.com/lmeyer/zilex">https://github.com/lmeyer/zilex</a>
+            </p>
+        </div>
+    </div>
+{% endblock %}
