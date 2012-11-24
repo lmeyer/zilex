@@ -5,3 +5,4 @@ thumbs.db
 .project
 .settings/
 .idea
+vendor/
