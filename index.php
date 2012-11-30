@@ -44,7 +44,7 @@ $app->get('/{page}', function ($page) use ($app) {
 		}
 	}
 })
-->value('page', $app['zilex.index']);;
+->value('page', $app['zilex.index']);
 
 
 $app->error(function (\Exception $e, $code) use ($app) {

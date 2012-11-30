@@ -3,11 +3,10 @@
 <head>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="web/favicon.ico">
-    {% block title %}
-        <title>Z Framework Silex Implementation</title>
-    {% endblock %}
+    
+    <title>{% block title %}Z Framework Silex Implementation{% endblock %}</title>
 
-    {% block css %}{% endblock %}
+    {% block header_css %}{% endblock %}
 
     {% block header_js %}{% endblock %}
     <!--[if lt IE 9]>
@@ -18,5 +17,6 @@
     {% block header %}{% endblock %}
     {% block content %}{% endblock %}
     {% block footer %}{% endblock %}
+    {% block footer_js %}{% endblock %}
 </body>
 </html>
