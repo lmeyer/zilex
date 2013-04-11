@@ -10,7 +10,7 @@ $app['zilex.index'] = 'install';
 
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/views',
-	'twig.options' => array('cache' => __DIR__.'/../cache'),
+	'twig.options' => array('cache' => __DIR__.'/cache'),
 ));
 
 $app->get('/summary', function () use ($app) {

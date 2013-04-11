@@ -7,3 +7,4 @@ thumbs.db
 .idea
 vendor/
 composer.phar
+cache/
